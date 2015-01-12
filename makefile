@@ -32,6 +32,3 @@ pylint-full:
 
 test: pylint
 	$(PYTEST) $(SRCPATH)
-
-requires: $(ROOTPATH)/requirements.txt
-	$(PIPINSTALL) -r $(ROOTPATH)/requirements.txt

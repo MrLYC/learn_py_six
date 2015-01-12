@@ -22,7 +22,7 @@ dev-venv-path: $(VIRTUAL_ENV)
 
 dev-venv: dev-mk
 	[ -e "$(VIRTUAL_ENV)" ] || \
-	virtualenv "$(VIRTUALENV)" && \
+	virtualenv "$(VIRTUALENV)" --python=python3 && \
 	cp $(VENVPATH)/activate $(DEVPATH)/activate && \
 	chmod 777 $(DEVPATH)/activate
 
